@@ -1,0 +1,18 @@
+git config --local user.name "user_name_no_github"
+git config --local user.email "e-mail no github"   #se estiver na ESUCRI, lembrar de no Gerenciador de Credenciais excluir outros githubs.
+
+git status    # mostra qual branch você está, arquivos não added ou commitados...
+
+git clone 'https....repo.git'      # clona o repositório
+git remote -v       #verifica o(s) repositório(s) remoto(s). Se não houver nenhum, nada será mostrado.
+git remote add origin https://github.com/CristhianFicher/PE_3.git    # adiciona o repositório remoto no alias (neste caso, origin)
+git add .               # Adiciona todos os arquivos localmente
+git commit -a -m "sua mensagem de commit"   #commita localmente todos os arquivos, mensagem de commmit personalizada, faça a sua, exemplo: 'feature/header'.
+git push -u origin main      # sobe os commits para o repositório remoto
+
+git checkout nome_do_branch     #troca de nome_do_branch
+
+git config --local --list
+git config --local --edit
+
+git qualquer_comando --help    #abre o help online do comando
