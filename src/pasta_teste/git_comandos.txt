@@ -16,3 +16,5 @@ git config --local --list
 git config --local --edit
 
 git qualquer_comando --help    #abre o help online do comando
+
+testeasdfsrd
