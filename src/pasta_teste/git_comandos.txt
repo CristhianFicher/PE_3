@@ -51,7 +51,7 @@ git credential-cache exit
 
 Depois de remover as credenciais armazenadas, quando você fizer um git push, o Git irá pedir novamente suas credenciais, e você poderá fornecer as corretas para a nova conta.
 --
-AUTENTICAÇÃO VIA TOKEN (PAT)
+AUTENTICAÇÃO VIA TOKEN (PAT) E PUSH
 
 Gerar um Token de Acesso Pessoal (PAT)
 
@@ -87,5 +87,7 @@ ATENÇÃO!!!
 Quando o Git solicitar a senha, você não deve usar a senha da sua conta GitHub, mas sim o Token de Acesso Pessoal (PAT) que você acabou de gerar.
 GUARDE O SEU TOKEN PORQUE ELE SUMIRÁ! (Se precisar de maiores infos de segurança, procuro no ChatGPT ou outros lugares)
 
+PROVAVELMENTE VOCÊ TERÁ QUE FAZER O push SEMPRE DESSA FORMA para que que não dê o push como --global.
+--
 
 
