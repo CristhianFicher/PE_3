@@ -1,5 +1,9 @@
+--
+AUTENTICAÇÃO LOCAL NA MÁQUINA
+
 git config --local user.name "user_name_no_github"
 git config --local user.email "e-mail no github"   #se estiver na ESUCRI, lembrar de no Gerenciador de Credenciais excluir outros githubs.
+--
 
 git status    # mostra qual branch você está, arquivos não added ou commitados...
 
@@ -10,11 +14,78 @@ git add .               # Adiciona todos os arquivos localmente
 git commit -a -m "sua mensagem de commit"   #commita localmente todos os arquivos, mensagem de commmit personalizada, faça a sua, exemplo: 'feature/header'.
 git push -u origin main      # sobe os commits para o repositório remoto
 
-git checkout nome_do_branch     #troca de nome_do_branch
+git checkout nome_do_branch     # troca de nome_do_branch
 
 git config --local --list
 git config --local --edit
 
-git qualquer_comando --help    #abre o help online do comando
+git qualquer_comando --help    # abre o help online do comando
 
-testeasdfsrd
+git branch -r       # para ver os branches disponíveis no repositório remoto
+git checkout nome_do_branch   # para mudar de branch. 
+git fetch   # sincroniza os branches remotos, porque podem não ter sincronizado ao clonar o repositório.
+git checkout -b nome-do-branch origin/nome-do-branch  # (provavelmente não será necessário na ordem) isso criará o branch localmente, fazendo o tracking do branch remoto.
+git branch  # para verificar em qual branch você está atualmente
+
+--
+Para verificar qual conta está configurada no seu Git local, use os seguintes comandos
+git config --global user.name
+git config --global user.email
+
+
+--
+LIMPANDO CRENDENCIAIS
+No Windows:
+
+    Abra o Gerenciador de Credenciais e procure por qualquer entrada associada ao GitHub. Se houver, remova essas entradas para que o Git solicite novamente suas credenciais.
+
+No macOS:
+
+    Abra o Keychain Access e procure por entradas associadas ao GitHub, e remova as antigas.
+
+Linux:
+
+    As credenciais podem ser armazenadas em cache usando o git-credential-cache. Você pode limpar as credenciais com o comando:
+
+git credential-cache exit
+
+Depois de remover as credenciais armazenadas, quando você fizer um git push, o Git irá pedir novamente suas credenciais, e você poderá fornecer as corretas para a nova conta.
+--
+AUTENTICAÇÃO VIA TOKEN (PAT)
+
+Gerar um Token de Acesso Pessoal (PAT)
+
+    Acesse sua conta do GitHub e vá para Settings (Configurações).
+
+    No menu à esquerda, clique em Developer settings.
+
+    Em seguida, clique em Personal access tokens.
+
+    Clique em Generate new token.
+
+    Dê um nome ao token (ex.: "token de push").
+
+    Escolha as permissões adequadas. Para push em repositórios, a permissão repo é suficiente.
+
+    Clique em Generate token.
+
+    Copie o token gerado, pois você não conseguirá vê-lo novamente após sair da página.
+
+2. Usando o Token de Acesso Pessoal (PAT) no git push
+
+Agora, ao fazer o git push, você precisará usar o token gerado em vez da senha.
+
+Execute o comando git push normalmente:
+
+git push https://seu_nome_de_usuario@github.com/outro_usuarui/repositorio.git
+
+OU SEJA(troque o nome de usuário):
+
+git push https://seu_nome_de_usuario@github.com/CristhianFicher/PE_3.git
+
+ATENÇÃO!!!
+Quando o Git solicitar a senha, você não deve usar a senha da sua conta GitHub, mas sim o Token de Acesso Pessoal (PAT) que você acabou de gerar.
+GUARDE O SEU TOKEN PORQUE ELE SUMIRÁ! (Se precisar de maiores infos de segurança, procuro no ChatGPT ou outros lugares)
+
+
+

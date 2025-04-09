@@ -1,5 +1,5 @@
 /src
     /components
-        /header                     # pastas em minúsculo. Se necessário espaço, usar underline.
+        /header                     # nomes de pastas em minúsculo. Se necessário espaço, usar underline.
             Header.module.js
-            Header.module.css       #nomes de arquivo em CamelCase. Perceber que o .module não fica em CamelCase, é minúsculo.
+            Header.module.css       # nomes de arquivo em CamelCase. Perceber que o .module não fica em CamelCase, é minúsculo.
