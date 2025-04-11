@@ -1,0 +1,123 @@
+/src
+    /components
+        /header                     # nomes de pastas em minúsculo. Se necessário espaço, usar underline.
+            Header.module.js
+            Header.module.css       # nomes de arquivo em CamelCase. Perceber que o .module não fica em CamelCase, é minúsculo.
+            /logo_header
+                LogoHeadear.module.js
+                LogoHeadear.module.css
+            /nome_header
+                NomeHeadear.module.js
+                NomeHeadear.module.css
+        /navigator                      # talvez inserir o nav dentro do header na estrutura de pastas.
+            Navigator.module.js
+            Navigator.module.css
+        /footer
+            Footer.module.js
+            Footer.module.css
+        /button-doe-ja
+            ButtonDoeJa.module.js
+            ButtonDoeJa.module.css
+        /pages
+            /sobre                     # ou home, talvez.
+                Sobre.module.js
+                Sobre.module.css
+            /noticias
+                Noticias.module.js
+                Noticias.module.css
+                /alternador_de_paginas                           # estou na duvida sobre manter o mesmo nome. São iguais aos de outras pages, mas terão rotas diferntes.
+                    AlternadorDePaginas.module.js
+                    AlternadorDePaginas.module.css
+                /noticia1
+                    Noticia1.module.js
+                    Noticia1.module.css
+                /noticia2
+                    Noticia2.module.js
+                    Noticia2.module.css
+                /noticia3...
+            /contato
+                Contato.module.js
+                Contato.module.css
+            /doacoes
+                Doacoes.module.js
+                Doacoes.module.css
+                /doacoes_deposito
+                    DoacoesDeposito.module.js
+                    DoacoesDeposito.module.css
+                /doacoes_pix
+                    DoacoesPix.module.js
+                    DoacoesPix.module.css
+                /doacoes_cartao_credito
+                    DoacoesCartaoCredito.module.js
+                    DoacoesCartaoCredito.module.css
+            /acoes_realizadas
+                AcoesRealizadas.module.js
+                AcoesRealizadas.module.css
+                /alternador_de_paginas
+                    AlternadorDePaginas.module.js
+                    AlternadorDePaginas.module.css
+                /projetos                                      # ELES PROVAVELMENTE USARÃO UMA MESMA ESTRUTURA (TEXTO E IMAGEM). AÍ, SEGUNDO O PROF É UM COMPONENTE SÓ.
+                    /projeto_recicle                           # Ou projeto1, projeto2... dessa forma pode dificultar manutenção sem necessariamente melhorar automação.
+                        ProjetoRecicle.module.js
+                        ProjetoRecicle.module.css
+                    /projeto_locomocao
+                        ProjetoLocomocao.module.js
+                        ProjetoLocomocao.module.css
+                /pages_projetos                                # são as páginas de cada projeto isoladamente.
+                    /page_proj_recicle
+                        PageProjRecicle.module.js
+                        PageProjRecicle.module.css
+                    /page_proj_locomocao
+                        PageProjLocomocao.module.js
+                        PageProjLocomocao.module.css
+                    /page_proj_3...
+
+            /campanhas
+                Campanhas.module.js
+                Campanhas.module.css
+                /alternador_de_paginas
+                    AlternadorDePaginas.module.js               # estou na duvida sobre manter o mesmo nome. São iguais, mas terão rotas diferentes.
+                    AlternadorDePaginas.module.css
+                /campanhas                                      # ELES PROVAVELMENTE USARÃO UMA MESMA ESTRUTURA (TEXTO E IMAGEM). AÍ, SEGUNDO O PROF É UM COMPONENTE SÓ.
+                    /pedagio_solidario
+                        CampanhaPedagioSolidario.js
+                        CampanhaPedagioSolidario.css
+                    /almoco_beneficente
+                        AlmocoBeneficente.js
+                        AlmocoBeneficente.css
+                    /campanha3...
+                /pages_campanhas                                 # são as páginas de cada campanha isoladamente.
+                    /page_camp_pedagio_solidario
+                        PageCampPedagioSolidario.module.js
+                        PageCampPedagioSolidario.module.css                
+                    /page_camp_almoco_beneficente
+                        PageCampAlmocoBeneficente.module.js
+                        PageCampAlmocoBeneficente.module.css                        
+                    /page_camp_3...
+
+            /parceiros
+                Parceiros.module.js
+                Parceiros.module.css
+                /parceiro_esucri
+                    ParceiroEsucri.js
+                    ParceiroEsucri.css
+                /parceiro_angeloni
+                    ParceiroAngeloni.js
+                    ParceiroAngeloni.css
+                /parceiro3...
+            /seja_um_voluntario
+                SejaUmVoluntario.module.js    
+                SejaUmVoluntario.module.css  
+  
+        /forms
+            /form_contato                           # estou na dúvida entre deixar eles fora ou colocar dentro da page.
+                FormContato.module.js
+                FormContato.module.css
+            /form_voluntario                        # estou na dúvida entre deixar eles fora ou colocar dentro da page.
+                FormVoluntario.module.js
+                FormVoluntario.module.css
+            /form_parceiro                          # opcional (?)
+                FormParceiro.module.js
+                FormParceiro.module.css
+        
+        
